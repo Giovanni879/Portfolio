@@ -1,0 +1,11 @@
+/* .boton-menu{
+    display: none;
+    min-width: 56px;
+} */
+
+@media (max-width: 720px){
+    .boton-menu{
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-pedidos',
-  templateUrl: './pedidos.component.html',
-  styleUrls: ['./pedidos.component.css']
+  templateUrl: './RXJS.component.html',
+  styleUrls: ['./RXJS.component.css']
 })
-export class PedidosComponent implements OnInit {
+export class RxjsComponent implements OnInit {
 
   constructor() { }
 

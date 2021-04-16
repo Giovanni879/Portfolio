@@ -6,6 +6,7 @@ import { MaterialModule } from '../material.module';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { ProductosComponent } from './components/productos/productos.component';
 import { RxjsComponent } from './components/RXJS/RXJS.component';
+import { HighlightJsConfig, HighlightJsModule, HIGHLIGHTJS_CONFIG } from 'ngx-highlight-js';
 
 
 
@@ -14,7 +15,16 @@ import { RxjsComponent } from './components/RXJS/RXJS.component';
   imports: [
     CommonModule,
     LoggedRoutingModule,
-    MaterialModule
-  ]
+    MaterialModule,
+    HighlightJsModule
+  ],
+  providers: [
+    { 
+      provide: HIGHLIGHTJS_CONFIG, 
+      useValue: { 
+        lang: 'html'
+      } as HighlightJsConfig 
+    }
+  ],
 })
 export class LoggedModule { }

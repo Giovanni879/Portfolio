@@ -9,3 +9,24 @@
 }
 html, body { height: 100%; margin: 0; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.item-list{
+    background: #3f51b5; 
+    border-radius: 3px;
+    margin-top: 4px;
+}
+
+.nombre-list{
+    color:white !important;
+}
+
+.item-list:hover{
+    background: #1d4e89 !important; 
+    border-radius: 3px;
+    margin-top: 4px;
+}
+
+.aside{
+    background: #8c9eff;
+    height: 100%;
+}

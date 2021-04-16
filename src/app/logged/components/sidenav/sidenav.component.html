@@ -1,14 +1,15 @@
 <mat-sidenav-container class="app-sidenav-container">
     <mat-sidenav class="app-sidenav" #sidenav [opened]="pantallaSmall() ? 'false' : 'true'" [mode]="pantallaSmall() ? 'over' : 'side'">
-        <mat-toolbar color="primary">
+        <mat-toolbar color="primary" class="center">
+            <mat-icon style="margin-bottom: 13px;">book</mat-icon>
             <p>Menú</p>
         </mat-toolbar>
-        <mat-nav-list>
-            <mat-list-item>
-               <a matLine [routerLink]="['RXJS']">RXJS</a>
+        <mat-nav-list class="aside">
+            <mat-list-item class="item-list">
+               <a  matLine [routerLink]="['RXJS']" class="nombre-list">RXJS</a>
             </mat-list-item>
-            <mat-list-item>
-                <a matLine [routerLink]="['productos']">productos</a>
+            <mat-list-item class="item-list">
+                <a matLine [routerLink]="['productos']" class="nombre-list">productos</a>
              </mat-list-item>
           </mat-nav-list>          
     </mat-sidenav>
